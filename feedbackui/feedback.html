@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback UI</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+
+    <div class="feedback-container">
+        <h2>How satisfied are you with our service?</h2>
+        <div class="ratings">
+            <div class="rating" id="unhappy">Unhappy</div>
+            <div class="rating" id="neutral">Neutral</div>
+            <div class="rating" id="satisfied">Satisfied</div>
+        </div>
+        <button id="sendReviewButton">Send Review</button>
+    </div>
+
+    <div class="feedback-section">
+        <h3>Your Feedback:</h3>
+        <p id="selectedFeedback">No feedback selected yet.</p>
+    </div>
+
+    <!-- Modal for feedback confirmation -->
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Feedback Received:</h3>
+            <p id="modalFeedbackMessage"></p>
+        </div>
+    </div>
+
+    <script src="feedback.js"></script>
+</body>
+</html>
