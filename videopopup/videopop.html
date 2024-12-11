@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Trailer Pop-up</title>
+    <link rel="stylesheet" href="videopop.css">
+</head>
+<body>
+    <div class="movie-container">
+        <img src="https://via.placeholder.com/300x200" alt="Movie Poster" class="movie-poster">
+        <h1 class="movie-title">Movie Title</h1>
+        <p class="movie-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+        <button id="watchNowBtn" class="watch-now-btn">Watch Now</button>
+    </div>
+
+    <div id="videoPopup" class="video-popup hidden">
+        <div class="video-container">
+            <video id="movieTrailer" controls>
+                <source src="https://videos.pexels.com/video-files/7704075/7704075-hd_1920_1080_25fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button id="closePopupBtn" class="close-popup-btn">Close</button>
+        </div>
+    </div>
+
+    <script src="videopop.js"></script>
+</body>
+</html>
